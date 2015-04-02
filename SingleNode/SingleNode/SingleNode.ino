@@ -28,6 +28,9 @@ void setup(void) {
   network.begin(channelNumber,nodeAddress);        
   // set if the node can give user feedback
   bool canIndicate = 1; // Later to be replaced by a function that somehow (address?) knows the node has user feedback.
+  
+  //For network.update(); to work the child node must communicate with
+  //it's parent node so the child must write the parent or the parent the child
 }
 
 void loop() 
